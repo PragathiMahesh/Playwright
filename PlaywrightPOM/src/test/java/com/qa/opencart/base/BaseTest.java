@@ -19,7 +19,7 @@ public class BaseTest {
 	protected LoginPage loginPage;
 	
 	
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	public void setup() {
 		 pf = new PlaywrightFactory();
 		 prop = pf.init_prop();
